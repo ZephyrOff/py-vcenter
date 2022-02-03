@@ -4,7 +4,7 @@
 Avant toutes actions, il est nécessaire d'initialiser la classe Vcenter()
 
 ```python
-vc = Vcenter(VCENTER_IP,ACCOUNT_USER,ACCOUNT_PASSWORD)
+vc = vcenter.Vcenter(VCENTER_IP,ACCOUNT_USER,ACCOUNT_PASSWORD)
 ```
 
 > En paramètre supplémentaire, nous pouvons mettre:<br/>
