@@ -3,7 +3,9 @@
 ### Connexion
 Avant toutes actions, il est nécessaire d'initialiser la classe Vcenter()
 
-```vc = Vcenter(VCENTER_IP,ACCOUNT_USER,ACCOUNT_PASSWORD)```
+`` `py
+vc = Vcenter(VCENTER_IP,ACCOUNT_USER,ACCOUNT_PASSWORD)
+`` ''
 
 En paramètre supplémentaire, nous pouvons mettre:<br/>
 - verbose = _True_ ou _False_   <span style="color:red">pour afficher le logs des actions</span><br/>
