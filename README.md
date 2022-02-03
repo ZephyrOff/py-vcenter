@@ -49,14 +49,24 @@ vc.reload_snapshot(vmname,snapshot_name)
 ```
 ## VM
 ### Mettre une VM en pause
-```suspend_vm(vmname)```
+```python
+vc.suspend_vm(vmname)
+```
 ### Démarrer une VM
-```boot_vm(vmname)```
+```python
+vc.boot_vm(vmname)
+```
 ### Arrêter une VM
-```shutdown_vm(vmname)```
+```python
+vc.shutdown_vm(vmname)
+```
 ### Redémarrer une VM
-```reboot_vm(vmname)```
+```python
+vc.reboot_vm(vmname)
+```
 
 ## Object
 ### Récupérer des informations sur des VM
-```get_vm_dict(vname)```
+```python
+vc.get_vm_dict(vname)
+```
