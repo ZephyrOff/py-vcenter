@@ -5,3 +5,4 @@ Afficher proprement les informations de VM
 vc = vcenter.Vcenter(VCENTER_IP,ACCOUNT_USERNAME,getpass('\tPassword:'))
 get_vm_info(vc,VMNAME)
 ```
+###### Pour cet exemple, le fichier color.py est nécessaire
