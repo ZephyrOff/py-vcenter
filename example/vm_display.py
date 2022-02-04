@@ -96,7 +96,3 @@ def get_vm_info(vc,vname):
 					print("   Description: {}".format(snap['Description']))
 		else:
 			print("No Snapshot Found")
-
-
-vc = vcenter.Vcenter(VCENTER_IP,ACCOUNT_USERNAME,getpass('\tPassword:'))
-get_vm_info(vc,VMNAME)
