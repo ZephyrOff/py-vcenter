@@ -211,13 +211,13 @@ class Vcenter():
 				while child==1:
 					if snapshot_name == snapshot.name:
 						snap_obj = snapshot.snapshot
-						if Name == None:
+						if name == None:
 							Name = snapshot.name
-						if Desc == None:
+						if desc == None:
 							Desc = snapshot.description
 
 						self.print_verbose(f"Rename snapshot {snap_obj}")
-						snap_obj.RenameSnapshot(Name,Desc)
+						snap_obj.RenameSnapshot(name,desc)
 
 						return 1, f"Snapshot renamed"
 
