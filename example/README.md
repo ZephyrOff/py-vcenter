@@ -1,5 +1,5 @@
 # Example
-## <ins>display_vm.py</ins>
+## <ins>vm_display.py</ins>
 Afficher proprement les informations de VM
 ```python
 vc = vcenter.Vcenter(VCENTER_IP,ACCOUNT_USERNAME,getpass('\tPassword:'))
