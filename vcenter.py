@@ -42,7 +42,13 @@ class Vcenter():
 
 	def disconnect(self):
 		if hasattr(self, 'vcenter_con'):
-			Disconnect(self.vcenter_con)
+			try:
+				Disconnect(self.vcenter_con)
+				return 1
+			except:
+				pass
+		return 0
+
 
 	def wait_for_task(self,task, actionName='job', hideResult=False):
 		try:
@@ -194,7 +200,7 @@ class Vcenter():
 			return 0, "No VMs found"
 
 	#Rename snapshot of specific VM
-	def rename_snapshot(self,vmname,snapshot_name, Name=None, Desc=None):
+	def rename_snapshot(self,vmname,snapshot_name, name=None, desc=None):
 		vm = self.get_obj(vmname)
 
 		if vm!=None:
