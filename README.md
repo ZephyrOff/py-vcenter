@@ -1,4 +1,4 @@
-# Wrapper VCenter
+# py-VCenter
 ## <ins>Prérequis</ins>
 - Python 3
 - Module Python 3:
