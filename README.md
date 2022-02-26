@@ -20,7 +20,7 @@ vc = Vcenter(VCENTER_IP,ACCOUNT_USER,ACCOUNT_PASSWORD)
 >- verbose = _True_ ou _False_   pour afficher le logs des actions<br/>
 >- ssl_connection = _True_ ou _False_   pour lancer une connexion sécurisée ou non<br/>
 >- ssl_protocol = ssl.PROTOCOL_TLSv1_2   pour spécifier le protocole utilisé<br/>
->- ssl_verify = ssl.CERT_NONE   pour contrôler ou non le certificat<br/>
+>- ssl_verify = ssl.CERT_NONE, ssl.CERT_OPTIONAL, ssl.CERT_REQUIRED   pour contrôler ou non le certificat<br/>
 
 <kbd><samp>quitte si erreur</samp></kbd>
 ### Déconnexion

@@ -1,8 +1,17 @@
-#install pyVim
+####################################################################
+#/ Nom du projet: py-vcenter                                      /#
+#/ Nom du fichier: vcenter.py                                     /#
+#/ Type de fichier: fichier principal                             /#
+#/ Fichier annexe:                                                /#
+#/                                                                /#
+#/ Auteur: ZephyrOff  (Alexandre Pajak)                           /#
+#/ Version: 1.1                                                   /#
+#/ Description: Wrapper vcenter pour actions courantes            /#
+#/ Date: 26/02/2022                                               /#
+####################################################################
+
 from pyVim.connect import SmartConnect, Disconnect
-#install pyVmomi
 from pyVmomi import vim,vmodl
-#install sslyze
 import ssl
 from getpass import getpass
 from datetime import datetime
@@ -29,8 +38,6 @@ class Vcenter():
 		if ssl_connection==True:
 			context = ssl.SSLContext(ssl_protocol)
 			context.verify_mode = ssl_verify
-			#context.verify_mode = ssl.CERT_OPTIONAL
-			#context.verify_mode = ssl.CERT_REQUIRED
 		else:
 			context = ssl._create_unverified_context()
 
